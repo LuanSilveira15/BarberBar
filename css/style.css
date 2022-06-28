@@ -1,0 +1,367 @@
+body {
+  margin: 0px;
+  /* font-family: ; */
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-bg {
+  background: #14213d;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  color: #e5e5e5;
+  gap: 40px;
+}
+
+.header-menu a {
+  padding: 16px 0px;
+  display: inline-block;
+  font: 500 1rem/1.4 "Frank Ruhl Libre", sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffa954;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+.botao {
+  padding: 13px 45px;
+  color: #f6f7fb;
+  background: #1a2334;
+  border: 1px solid white;
+  transition: all 1s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.botao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  background: #ffa954;
+  color: #1a2334;
+  font-weight: 600;
+  border: 1px solid #e6b037;
+}
+
+.principal-bg {
+  background: #14213d;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding-top: 80px;
+}
+
+.principal-escrito img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagem-capa {
+  height: 600px;
+  width: 100%;
+}
+.imagem-capa img {
+  height: 100%;
+  width: 100%;
+}
+
+.principal-escrito {
+  align-self: end;
+  margin-top: 100px;
+  padding-bottom: 200px;
+}
+
+.principal-escrito h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.3rem;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.titulo-principal span {
+  color: #fddc2e;
+}
+
+.principal-escrito p {
+  font: 400 1.3rem/1.4 "Poppins", sans-serif;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.servicos-bg {
+  background: #f6f7fb;
+}
+
+.titulo-serviços h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #1a2334;
+  text-transform: lowercase;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding-bottom: 120px;
+}
+
+.card {
+  height: 230px;
+  width: 200px;
+  text-align: center;
+  margin-top: 70px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card h4 {
+  color: #1a2334;
+  background-color: #e9e9e9;
+  padding: 3px;
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 23px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card:hover h4 {
+  background-color: #1a2334;
+  color: #f6f7fb;
+}
+
+/**inicio-container profissionais**/
+.profissionais-bg {
+  background: #e5e5e5;
+}
+
+.titulo-profissionais {
+  text-align: center;
+}
+
+.titulo-profissionais h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #1a2334;
+  text-transform: lowercase;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-profissionais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 1.5rem;
+  padding-bottom: 120px;
+}
+
+.card-profissionais {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.imagem-profissionais {
+  position: relative;
+  z-index: 10;
+}
+
+.imagem-profissionais img {
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.contato-profissionais {
+  width: 270px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background: #ffffff;
+  border: 1px solid #14213d;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  z-index: 0;
+  transition: opacity, translateY 0.4s;
+  opacity: 0;
+}
+
+.card-profissionais:hover .contato-profissionais {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.contato-profissionais h2 {
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.contato-profissionais i {
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.contato-profissionais button {
+  padding: 6px 15px;
+  color: #e5e5e5;
+  background: #14213d;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.bar-bg {
+  background: #1a2334;
+  box-shadow: inset 0 200px #e5e5e5, inset 0 -200px #ffffff;
+}
+.imagem-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.conteudo-bar {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.conteudo-bar h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.3rem;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.conteudo-bar span {
+  color: #e6b037;
+}
+.promocao-bar ul {
+  display: inline-block;
+  padding: 32px 32px;
+  border-radius: 5px;
+  padding-top: 60px;
+  align-items: center;
+  position: relative;
+}
+
+.promocao-bar ul li {
+  font-size: 1.3rem;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+
+.promocao-bar li {
+  padding-bottom: 10px;
+}
+
+.promocao-bar li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("./img/icon.png");
+  position: absolute;
+  left: -21px;
+}
+
+.imagem-bar img {
+  height: 100%;
+}
