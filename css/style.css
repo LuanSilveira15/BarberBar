@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  /* font-family: ; */
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -30,7 +30,6 @@ img {
 }
 
 .container {
-  box-sizing: border-box;
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
@@ -55,13 +54,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   color: #e5e5e5;
-  gap: 40px;
+  gap: 25px;
 }
 
 .header-menu a {
   padding: 16px 0px;
   display: inline-block;
-  font: 500 1rem/1.4 "Frank Ruhl Libre", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: #ffffff;
   position: relative;
 }
@@ -117,17 +117,14 @@ img {
   object-fit: cover;
 }
 
-.imagem-capa {
-  height: 600px;
-  width: 100%;
-}
 .imagem-capa img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
 }
 
 .principal-escrito {
-  align-self: end;
+  align-self: center;
   margin-top: 100px;
   padding-bottom: 200px;
 }
@@ -135,11 +132,8 @@ img {
 .principal-escrito h1 {
   font-size: 4rem;
   color: #ffffff;
-  font-family: "Frank Ruhl Libre";
-  font-style: normal;
-  font-weight: 900;
-  line-height: 4.3rem;
-  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 4.5rem;
   margin-bottom: 32px;
 }
 
@@ -148,7 +142,8 @@ img {
 }
 
 .principal-escrito p {
-  font: 400 1.3rem/1.4 "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
   color: #ffffff;
   margin-bottom: 32px;
 }
@@ -158,21 +153,20 @@ img {
 }
 
 .titulo-serviços h1 {
-  font-size: 2.5rem;
-  font-family: "Poppins";
-  font-weight: 900;
-  color: #1a2334;
-  text-transform: lowercase;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  color: #14213d;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 35px;
-  padding-bottom: 120px;
+  gap: 25px;
+  padding-bottom: 180px;
 }
 
 .card {
@@ -219,18 +213,13 @@ img {
   background: #e5e5e5;
 }
 
-.titulo-profissionais {
-  text-align: center;
-}
-
 .titulo-profissionais h1 {
-  font-size: 2.5rem;
-  font-family: "Poppins";
-  font-weight: 900;
-  color: #1a2334;
-  text-transform: lowercase;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: #14213d;
 }
 
 .container-profissionais {
@@ -254,10 +243,12 @@ img {
 .imagem-profissionais img {
   height: 100%;
   border-radius: 5px 5px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .contato-profissionais {
-  width: 270px;
+  width: 279px;
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -271,6 +262,7 @@ img {
   z-index: 0;
   transition: translateY(0.4s);
   opacity: 0;
+  transition: all.8s;
 }
 
 .card-profissionais:hover .contato-profissionais {
@@ -327,13 +319,10 @@ img {
   padding-bottom: 100px;
 }
 .conteudo-bar h1 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   color: #ffffff;
-  font-family: "Frank Ruhl Libre";
-  font-style: normal;
-  font-weight: 900;
-  line-height: 4.3rem;
-  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 4.8rem;
   margin-bottom: 32px;
 }
 
@@ -341,20 +330,15 @@ img {
   color: #e6b037;
 }
 .promocao-bar ul {
-  display: inline-block;
-  padding: 32px 32px;
-  align-items: center;
-  position: relative;
-}
-
-.promocao-bar ul li {
-  font-size: 1.3rem;
-  font-family: "Poppins";
-  color: #ffffff;
+  padding-top: 40px;
 }
 
 .promocao-bar li {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
   padding-bottom: 10px;
+  position: relative;
 }
 
 .promocao-bar li::before {
@@ -362,7 +346,7 @@ img {
   display: inline-block;
   width: 13px;
   height: 9px;
-  background-image: url("./img/icon.png");
+  background-image: url("../img/icon.png");
   position: absolute;
 }
 
@@ -373,36 +357,45 @@ img {
 .texto-cliente {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  text-align: center;
 }
+
 .texto-cliente h1 {
   font-size: 4rem;
+  font-weight: 600;
   color: #1a2334;
-  font-family: "Frank Ruhl Libre";
-  font-style: normal;
-  font-weight: 900;
   line-height: 4.3rem;
-  text-transform: capitalize;
+  padding-top: 100px;
+}
+.texto-cliente span {
+  font-size: 1.1rem;
+  line-height: 3;
+  font-weight: 600;
+  color: #e6b037;
 }
 
 .container-clientes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-  padding-bottom: 120px;
+  gap: 25px;
+  padding-bottom: 160px;
   padding-top: 120px;
 }
 
-.texto-cliente h1 {
-  text-align: center;
-}
 .clientes {
   height: 350px;
   width: 250px;
   background: #f6f7fb;
   color: #1a2334;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: all.4s;
+}
+
+.clientes:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .imagem-cliente img {
@@ -416,44 +409,87 @@ img {
 
 .texto-cliente p {
   font-size: 0.9rem;
+  font-weight: 500;
+  color: #14213d;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
 .texto-cliente h2 {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   text-align: center;
+}
+
+.visita-bg {
+  background: #e5e5e5;
+}
+
+.titulo-visita h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: #1a2334;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.titulo-visita span {
+  color: #e6b037;
+}
+.imagem-galeria {
+  padding: 5px;
+}
+
+.imagem-galeria img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 250px;
+  padding-bottom: 120px;
+}
+
+.h-1 {
+  grid-row: span 1;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+
+.w-1 {
+  grid-column: span 1;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.w-3 {
+  grid-column: span 3;
 }
 
 .contato-bg {
   background: #ffffff;
-  padding-top: 120px;
 }
 
 .titulo-contato h1 {
-  font-size: 4rem;
-  color: #1a2334;
-  font-family: "Frank Ruhl Libre";
-  font-style: normal;
-  font-weight: 900;
-  line-height: 4.3rem;
-  text-transform: capitalize;
-  padding-bottom: 120px;
   text-align: center;
-}
-
-.titulo-contato p {
-  font: 400 1.3rem/1.4 "Frank Ruhl Libre", sans-serif;
-  color: #14213d;
-  margin-bottom: 20px;
-  text-align: start;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #1a2334;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .conteudo-contato {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 29px;
   padding-bottom: 100px;
 }
 
@@ -468,8 +504,8 @@ img {
 }
 
 .form {
-  display: grid;
-  grid: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -516,24 +552,30 @@ img {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
-.footer-contato h3 {
+.footer h3 {
   font-size: 1.5rem;
+  font-weight: 400;
   color: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
-.footer-contato ul {
-  margin-bottom: 32px;
-}
-.footer-contato li {
-  padding-bottom: 12px;
-  font-size: 1.5rem;
+.footer ul li {
+  font-size: 1rem;
   color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.footer-contato ul li a {
+  color: #ffffff;
+}
+
+.footer .redes {
+  display: flex;
+  gap: 25px;
+  padding-top: 60px;
 }
