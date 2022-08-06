@@ -12,57 +12,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-
     <title>BarberBar</title>
 </head>
 
 <body>
 
     <!--Inicio Header-->
-    <div class="header-bg">
-        <div class="header container">
-            <a class="logo-bar" href="./">
-                <img class="imagem-logo" src="./img/BarberBar.svg" alt="">
-            </a>
-
-            <nav class="primaria">
-                <ul class="header-menu">
 
 
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#equipe">Profissionais</a></li>
-                    <li><a href="#Trabalhe conosco">Trabalhe conosco</a></li>
-
-                </ul>
-            </nav>
-
-            <div>
-                <button class="botao">Login</button>
-            </div>
+    <div class="header ">
+        <div class="logo">
+            <img src="./img/luanlogogrande.png" alt="">
         </div>
-        <!--Fim Header-->
+
+        <ul class="navbar">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#equipe">Profissionais</a></li>
+            <li><a href="#Trabalheconosco">Trabalhe conosco</a></li>
+        </ul>
+
+        <div class="icons">
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <a id="icon-busca" href="#"><img src="./img/icon1.png" alt=""></a>
+            <a href="#"><img src="./img/icon3.png" alt=""></a>
+            <a id="campo-login" href="#"><img src="./img/icon2.png" alt=""></a>
+        </div>
+
+        <form action="" class="campo-busca">
+            <input type="search" id="text-busca" placeholder="Pesquisar...">
+            <label for="text-busca" class='bx bx-search-alt-2'></label>
+        </form>
+
+        <div class="card-compras">
+        </div>
 
 
+        <form action="" class="container-login">
+            <h3>Login</h3>
+            <input type="text" name="nome" placeholder="nome de usuario" class="box">
+            <input type="password" name="senha" placeholder="sua senha" class="box">
+            <p>Não possui conta?<a href="#">Criar conta</a></p>
+            <input type="submit" value="login now" class="botao">
 
+        </form>
     </div>
+
+
     <!--fim Header-->
+
+
 
     <!--Inicio princiap-->
     <main class="principal-bg">
-
         <div class="principal  container">
 
             <div class="principal-escrito">
                 <h1 class="titulo-principal">Aqui É Barba,
                     Cabelo Bigode
                     E <span>Cervejinha</span>
-                    Gelada .</h1>
+                    Gelada.</h1>
                 <p>Quem quer ser bem atendido e voltar para casa
                     mais bonito sabe que a barbearia BarberBar é o
-                    melhor lugar!</p>
-                <button class="botao">Agendar</button>
+                    melhor lugar!
+                </p>
+
+                <div class="container-agendamento">
+                    <form action="">
+
+                        <div class="input-box">
+                            <span>Escolha Data</span>
+                            <input type="date" name="" id="">
+                        </div>
+
+                        <div class="input-box">
+                            <span>Escolha hora</span>
+                            <input type="time" name="" id="">
+                        </div>
+
+                        <div>
+                            <button class="btn">Agendar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <div class="imagem-capa">
@@ -74,7 +106,7 @@
     <!--Fim-principal-->
 
 
-    <section class="servicos-bg" id=servicos>
+    <section class="servicos-bg" id="servicos">
         <div class="nossos-servicos container">
 
             <div class="titulo-serviços">
@@ -113,7 +145,7 @@
         </div>
     </section>
 
-    <section class="produtos-bg">
+    <section class="produtos-bg" id="produtos">
         <div class="texto-titulo-produtos">
             <h1>nossos produtos</h1>
             <p>Confira nossa lista de produtos para barba e cabelo.</p>
@@ -121,7 +153,7 @@
         <div class="container-produtos container">
             <div class="produtos">
                 <div class="imagem-produtos">
-                    <img src="./img/produto1.png" alt="">
+                    <img src="./img/produto6.png" alt="">
                 </div>
                 <h3>Balm para barba</h3>
                 <p>R$ 30,00</p>
@@ -139,7 +171,7 @@
 
             <div class="produtos">
                 <div class="imagem-produtos">
-                    <img src="./img/produto3.png" alt="">
+                    <img src="./img/produto8.png" alt="">
                 </div>
                 <h3>Balm para barba</h3>
                 <p>R$ 29,99</p>
@@ -208,7 +240,7 @@
     </section>
 
 
-    <section class="profissionais-bg">
+    <section class="profissionais-bg" id="equipe">
         <div class="container-cards container">
             <div class="titulo-profissionais">
                 <h1>conheça nossa equipe</h1>
@@ -310,7 +342,7 @@
             </div>
 
             <div class="imagem-bar">
-                <img src="./img/imagem-bar.jpg" alt="">
+                <img src="./img/bar.jpg" alt="">
             </div>
         </div>
     </section>
@@ -427,8 +459,8 @@
 
 
 
-    <section class="contato-bg ">
-        <div class="titulo-contato container">
+    <section class="contato-bg" id="Trabalheconosco">
+        <div class=" titulo-contato container">
             <h1>Trabalhe conosco</h1>
         </div>
 
@@ -473,43 +505,41 @@
 
     <footer class="footer-bg">
         <div class="footer  container">
-            <div>
-                <img src="./img/BarberBar.svg" alt="">
+
+            <div class="endereco">
+                <img src="./img/luanlogogrande.png" alt="">
             </div>
+
             <div class="footer-contato">
                 <h3>Contato</h3>
                 <ul>
                     <li><a href="tel:+552199999999">+55 21 9999-9999</a></li>
                     <li><a href="mailto:contato@barberbar.com">contato@Barberbar.com</a></li>
-                    <li>Rua Antonio silver, 45 - Duque de Caxias</li>
+                    <li>Rua 45 - Duque de Caxias</li>
                     <li>Rio de Janeiro- RJ</li>
                 </ul>
+            </div>
 
+            <div class="footer-contato">
+                <h3>Menu Links</h3>
+                <ul>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Profissionais</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Redes</h3>
                 <div class="redes">
-                    <a href="">
-                        <img src="./img/facebook.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./img/instagram.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./img/zap.png" alt="">
-                    </a>
-
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-whatsapp'></i></a>
                 </div>
             </div>
 
-            <div class="footer-informacoes">
-                <h3>Informações</h3>
-                <ul>
-                    <li>Serviços</li>
-                    <li>Clientes</li>
-                    <li>Funcionarios</li>
-                    <li>Promoções</li>
-                    <li>Serviços</li>
-                    <li>Serviços</li>
-                </ul>
-            </div>
 
         </div>
         </div>
@@ -518,7 +548,7 @@
 
 
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
