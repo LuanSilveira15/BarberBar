@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
 
     <div class="header ">
         <div class="logo">
-            <img src="./img/luanlogogrande.png" alt="">
+            <img src="./img/luanlogograndenovo.png" alt="">
         </div>
 
         <ul class="navbar">
@@ -44,8 +44,6 @@
             <label for="text-busca" class='bx bx-search-alt-2'></label>
         </form>
 
-        <div class="card-compras">
-        </div>
 
 
         <form action="" class="container-login">
@@ -56,10 +54,10 @@
             <input type="submit" value="login now" class="botao">
 
         </form>
+
     </div>
-
-
     <!--fim Header-->
+
 
 
 
@@ -90,7 +88,7 @@
                             <input type="time" name="" id="">
                         </div>
 
-                        <div>
+                        <div class="input-box">
                             <button class="btn">Agendar</button>
                         </div>
                     </form>
@@ -106,44 +104,60 @@
     <!--Fim-principal-->
 
 
-    <section class="servicos-bg" id="servicos">
-        <div class="nossos-servicos container">
+    <section class="nossos-servicos container " id="servicos">
 
-            <div class="titulo-serviços">
-                <h1>nossos serviços</h1>
-            </div>
+        <h1>nossos serviços</h1>
 
-            <div class="divisor"></div>
+        <div class="swiper container-slider">
 
-            <div class="cards">
+            <div class="swiper-wrapper">
 
-                <div class="card">
+                <div class="swiper-slide box">
                     <img src="./img/cabelo.png" alt="">
-                    <h4 class="nomes">Cabelo</h4>
+                    <div class="subtitulo">
+                        <h4>Cabelo</h4>
+                    </div>
                 </div>
 
-                <div class="card">
+                <div class="swiper-slide box">
                     <img src="./img/bigode.png" alt="">
-                    <h4>Barba</h4>
+
+                    <div class="subtitulo">
+                        <h4>Bigode</h4>
+                    </div>
                 </div>
 
-                <div class="card">
+                <div class="swiper-slide box">
                     <img src="./img/dread.jpg" alt="">
-                    <h4>Dread</h4>
+
+                    <div class="subtitulo">
+                        <h4>Dread</h4>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <img src="./img/infantil.jpg" alt="">
-                    <h4>Infantil</h4>
-                </div>
-
-                <div class="card">
+                <div class="swiper-slide box">
                     <img src="./img/Pele.jpg" alt="">
-                    <h4>Cuidados da Pele</h4>
+
+                    <div class="subtitulo">
+                        <h4>Cuidados Pele</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./img/infantil.jpg" alt="">
+
+                    <div class="subtitulo">
+                        <h4>Infantil</h4>
+                    </div>
                 </div>
             </div>
+
+
         </div>
+
+
     </section>
+
+
 
     <section class="produtos-bg" id="produtos">
         <div class="texto-titulo-produtos">
@@ -353,57 +367,159 @@
             <span>O que os nossos clientes dizem</span>
         </div>
 
-        <div class="container-clientes container">
 
-            <div class="clientes">
-                <div class="imagem-cliente">
-                    <img src="./img/cliente1.jpg" alt="">
+        <div class=" swiper container-clientes container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente6.jpg" alt="">
+                    </div>
+
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Gustavo</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
                 </div>
-                <div class="texto-cliente">
-                    <p>“Atendimento incrível, profissionais qualificados e muito atenciosos! Volto sempre e recomendo a todos”</p>
-                    <h2>Gustavo</h2>
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente 7.jpg" alt="">
+                    </div>
+
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Fernando</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente2.jpg" alt="">
+                    </div>
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Jax</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente3.jpg" alt="">
+                    </div>
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Rodolfo</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente9.jpg" alt="">
+                    </div>
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Christyan</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente8.jpg" alt="">
+                    </div>
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Byll</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente10.jpg" alt="">
+                    </div>
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Leandro</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide clientes">
+                    <div class="imagem-cliente">
+                        <img src="./img/cliente1.jpg" alt="">
+                    </div>
+                    <div class="texto-clientes">
+                        <p>“Atendimento incrível, profissionais qualificados<br> e muito atenciosos<br>Volto sempre e recomendo a todos”</p>
+                        <h2>Lucas</h2>
+                    </div>
+
+                    <div class="icons-clientes">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
                 </div>
             </div>
-
-            <div class="clientes">
-                <div class="imagem-cliente">
-                    <img src="./img/cliente2.jpg" alt="">
-                </div>
-                <div class="texto-cliente">
-                    <p>“Atendimento incrível, profissionais qualificados e muito atenciosos Volto sempre e recomendo a todos”</p>
-                    <h2>Jax</h2>
-                </div>
-            </div>
-
-
-            <div class="clientes">
-                <div class="imagem-cliente">
-                    <img src="./img/cliente3.jpg" alt="">
-                </div>
-                <div class="texto-cliente">
-                    <p>“Atendimento incrível, profissionais qualificados e muito atenciosos Volto sempre e recomendo a todos”</p>
-                    <h2>Rodolfo</h2>
-                </div>
-            </div>
-
-            <div class="clientes">
-                <div class="imagem-cliente">
-                    <img src="./img/cliente1.jpg" alt="">
-                </div>
-                <div class="texto-cliente">
-                    <p>“Atendimento incrível, profissionais qualificados e muito atenciosos Volto sempre e recomendo a todos”</p>
-                    <h2>Lucas</h2>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
 
         </div>
 
@@ -507,7 +623,7 @@
         <div class="footer  container">
 
             <div class="endereco">
-                <img src="./img/luanlogogrande.png" alt="">
+                <img src="./img/luanlogograndenovo.png" alt="">
             </div>
 
             <div class="footer-contato">
@@ -547,7 +663,7 @@
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

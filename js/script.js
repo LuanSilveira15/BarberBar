@@ -20,7 +20,7 @@ buscar.addEventListener("click", function () {
   efetuar.classList.toggle("active");
 });
 
-window.onscroll = () => {
+buscar.addEventListener = () => {
   efetuar.classList.remove("active");
 };
 
@@ -33,6 +33,48 @@ admin.addEventListener("click", function () {
   login.classList.toggle("active");
 });
 
-window.onscroll = () => {
+admin.addEventListener = () => {
   login.classList.remove("active");
 };
+
+var swiper = new Swiper(".container-slider", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  centeredSlides: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1020: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".container-clientes", {
+  loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  centeredSlides: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1020: {
+      slidesPerView: 3,
+    },
+  },
+});
