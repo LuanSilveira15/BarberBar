@@ -20,12 +20,36 @@ img {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1350px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/** Plugin animação **/
+.fadeInDown {
+  transform: translate3d(0, -40px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 40px, 0);
+}
+.fadeInRight {
+  transform: translate3d(130px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
 
 /**inicio-container header**/
 
@@ -39,7 +63,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 10%;
+  padding: 0 200px;
   background: #0f3245;
 }
 
@@ -80,23 +104,37 @@ img {
 #menu-icon {
   font-size: 2rem;
   cursor: pointer;
-  color: #ffa954;
   display: none;
+  
+  
 }
 
 .icons {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+ 
+  
+}
+
+.icons .itens-carrinhos-compra {
+  position: absolute;
+  color: #ffa954;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  
 }
 
 .icons a {
-  background: #0f3245;
-  padding: 7px 9px;
-  border-radius: 4px;
+  padding: 10px 10px;
+  border-radius: 50%;
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: 0.4s;
+  background: #13293d;
+  
 }
 
 .icons img {
@@ -225,7 +263,7 @@ img {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   align-items: center;
   padding-top: 150px;
 }
@@ -322,14 +360,10 @@ img {
 /**inicio-container serviços**/
 
 .nossos-servicos .container-slider {
-  padding: 1rem;
+  padding: 7rem;
 }
 
-.nossos-servicos .container-slider:first-child {
-  margin-bottom: 2rem;
-}
-
-.nossos-servicos h1 {
+.nossos-servicos .titulo-servicos {
   text-align: center;
   font-size: 4rem;
   font-weight: 600;
@@ -343,14 +377,17 @@ img {
   text-align: center;
   margin-top: 100px;
   cursor: pointer;
+
 }
 
 .nossos-servicos .container-slider .box img {
-  height: 25rem;
+  height: 27rem;
   width: 100%;
   margin: 0 auto;
   object-fit: cover;
   border-radius: 5px;
+  
+ 
 }
 
 .nossos-servicos .container-slider .box h4 {
@@ -363,6 +400,7 @@ img {
   line-height: 23px;
   cursor: pointer;
   border-radius: 4px;
+ 
 }
 
 .nossos-servicos .container-slider .box:hover h4 {
@@ -372,7 +410,105 @@ img {
 
 /**fim-container serviços**/
 
-/**inicio-container-produtos**/
+/**inicio-container-produtos --**/
+
+.card-produtos {
+  position: absolute;
+  top: 80%;
+  right: -110%;
+  height: 100%;
+  width: 45rem;
+  height: 600px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+}
+
+.card-produtos.active {
+  right: 2%;
+  transition: 0.4s linear;
+}
+
+.card-produtos .container-cards-produtos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 50px;
+  margin-top: 20px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.card-produtos h1 {
+  padding: 0px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #14213d;
+  margin-top: 15px;
+}
+
+.card-produtos img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.card-produtos-nome {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #14213d;
+}
+
+.card-produto-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-produto-quantidade button {
+  padding: 2px 15px;
+  cursor: pointer;
+  background: #ffa954;
+  color: #14213d;
+  font-size: 1rem;
+  border: none;
+}
+
+.card-produto-quantidade button:hover {
+  background: #14213d;
+  color: #eee;
+}
+
+.card-produtos .container-detalhes-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 70px;
+  gap: 60px;
+}
+
+.container-detalhes-card .total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container-detalhes-card .efetuar-compra button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: #ffa954;
+  padding: 13px 40px;
+  cursor: pointer;
+}
+
+.container-detalhes-card .efetuar-compra button:hover {
+  background: green;
+  color: #fff;
+}
+
 .texto-titulo-produtos h1 {
   text-align: center;
   font-size: 4rem;
@@ -385,6 +521,10 @@ img {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 300;
+}
+
+.modelo-produto {
+  display: none;
 }
 
 .container-produtos {
@@ -421,13 +561,13 @@ img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.produtos h3 {
+.produtos .titulo-modelo {
   text-align: center;
   padding-top: 50px;
   font-size: 0.9rem;
 }
 
-.produtos p {
+.produtos .descricao-modelo {
   font-size: 0.8rem;
   padding-top: 15px;
   text-align: center;
@@ -436,6 +576,7 @@ img {
 .produtos .bx {
   background: #ffa954;
   position: absolute;
+  color: #14213d;
   right: 0;
   top: 0;
   font-size: 20px;

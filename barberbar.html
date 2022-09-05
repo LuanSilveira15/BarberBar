@@ -35,8 +35,12 @@
         <div class="icons">
             <div class="bx bx-menu" id="menu-icon"></div>
             <a id="icon-busca" href="#"><img src="./img/icon1.png" alt=""></a>
-            <a href="#"><img src="./img/icon3.png" alt=""></a>
             <a id="campo-login" href="#"><img src="./img/icon2.png" alt=""></a>
+            <a id="card-compra" href="#"><img src="./img/icon3.png" alt=""></a>
+            <div class="itens-carrinhos-compra">
+                <span>0</span> 
+            </div>
+            
         </div>
 
         <form action="" class="campo-busca">
@@ -45,6 +49,18 @@
         </form>
 
 
+        <div class="card-produtos">
+            <h1>Seus Produtos</h1>
+            <div class="carrinho-de-compra">
+            </div>
+            <div class="container-detalhes-card">
+                <div class="total">
+                    <span>Total:</span>
+                    <span>R$:</span>
+                </div>
+                <div class="efetuar-compra"><button>Efetuar Compra</button></div>
+            </div>
+        </div>
 
         <form action="" class="container-login">
             <h3>Login</h3>
@@ -52,7 +68,6 @@
             <input type="password" name="senha" placeholder="sua senha" class="box">
             <p>Não possui conta?<a href="#">Criar conta</a></p>
             <input type="submit" value="login now" class="botao">
-
         </form>
 
     </div>
@@ -66,16 +81,16 @@
         <div class="principal  container">
 
             <div class="principal-escrito">
-                <h1 class="titulo-principal">Aqui É Barba,
+                <h1 class="titulo-principal fadeInDown"  data-anime="200">Aqui É Barba,
                     Cabelo Bigode
                     E <span>Cervejinha</span>
                     Gelada.</h1>
-                <p>Quem quer ser bem atendido e voltar para casa
+                <p class="fadeInDown" data-anime="300">Quem quer ser bem atendido e voltar para casa
                     mais bonito sabe que a barbearia BarberBar é o
                     melhor lugar!
                 </p>
 
-                <div class="container-agendamento">
+                <div class="container-agendamento fadeInLeft" data-anime="400">
                     <form action="">
 
                         <div class="input-box">
@@ -95,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="imagem-capa">
+            <div class="imagem-capa  fadeInRight" data-anime="400">
                 <img src="./img/capa2.png" alt="">
             </div>
 
@@ -106,9 +121,9 @@
 
     <section class="nossos-servicos container " id="servicos">
 
-        <h1>nossos serviços</h1>
+        <h1 class="titulo-servicos fadeInDown" data-anime="600">nossos serviços</h1>
 
-        <div class="swiper container-slider">
+        <div class="swiper container-slider fadeInUp" data-anime="500">
 
             <div class="swiper-wrapper">
 
@@ -158,100 +173,42 @@
     </section>
 
 
+    <!-- Modelo que será copiado pelo JS para ser executado-->
+    <div class="modelo-produto">
+        <div class="produtos">
+            <div><i class='bx bx-cart-download'></i></div>
+            <div class="imagem-produtos"><img src="" alt=""></div>
+            <div class="titulo-modelo"></div>
+            <div class="descricao-modelo">R$</div>
+        </div>
 
+        <div class="container-cards-produtos">
+            <img src="">
+            <div class="card-produto-nome"></div>
+            <div class="card-produto-quantidade">
+                <button class="quantidade-menos">-</button>
+                <div class="card-item-quantidade">1</div>
+                <button class="quantidade-mais">+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim do Modelo que será copiado pelo Json para ser executado-->
+
+    <!--inicio container-produtos-->
     <section class="produtos-bg" id="produtos">
         <div class="texto-titulo-produtos">
             <h1>nossos produtos</h1>
             <p>Confira nossa lista de produtos para barba e cabelo.</p>
         </div>
         <div class="container-produtos container">
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto6.png" alt="">
-                </div>
-                <h3>Balm para barba</h3>
-                <p>R$ 30,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto2.png" alt="">
-                </div>
-                <h3>Creme para barba</h3>
-                <p>R$ 50,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto8.png" alt="">
-                </div>
-                <h3>Balm para barba</h3>
-                <p>R$ 29,99</p>
-                <i class='bx bx-cart-download'></i>
-
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto4.png" alt="">
-                </div>
-                <h3>Escovar barbear</h3>
-                <p>R$ 30,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto5.png" alt="">
-                </div>
-                <h3>Óleo para barba</h3>
-                <p>R$ 49,00</p>
-                <i class='bx bx-cart-download'></i>
-
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto6.png" alt="">
-                </div>
-                <h3>Balm para barba</h3>
-                <p>R$ 38,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto7.png" alt="">
-                </div>
-                <h3>Balm para barba</h3>
-                <p>R$ 30,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto8.png" alt="">
-                </div>
-                <h3>Balm para barba</h3>
-                <p>R$ 70,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-            <div class="produtos">
-                <div class="imagem-produtos">
-                    <img src="./img/produto9.png" alt="">
-                </div>
-                <h3>Balm para barba</h3>
-                <p>R$ 30,00</p>
-                <i class='bx bx-cart-download'></i>
-            </div>
-
-
         </div>
-
     </section>
+    <!--fim container-produtos-->
+
+
+
+
 
 
     <section class="profissionais-bg" id="equipe">
@@ -662,9 +619,10 @@
 
     </footer>
 
-
+    <script src="./plugins/simple-anime.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="produtosJson.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>
