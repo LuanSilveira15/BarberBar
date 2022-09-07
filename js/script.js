@@ -1,5 +1,15 @@
-//  Menu Mobile
+// Menu Ativo
+const items = document.querySelectorAll('.navbar a')
+items.forEach((item) => {
+  item.addEventListener('click', () =>{
+    document.querySelector('a.ativo').classList.remove('ativo')
+    item.classList.add('ativo')
+  })
+})
 
+
+
+//  Menu Mobile
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -10,6 +20,8 @@ menu.addEventListener("click", function () {
 window.onscroll = () => {
   navbar.classList.remove("active");
 };
+
+
 
 //  Campos de Busca
 
@@ -134,7 +146,6 @@ produtosJson.map((item, index) => {
   });
   document.querySelector(".container-produtos").append(containerProduto);
 });
-
 
 
 // Atualização do carrinho//
