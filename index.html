@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>BarberBar</title>
 </head>
 
@@ -19,7 +20,7 @@
 
     <!--Inicio Header-->
 
-<span id="topo"></span>
+    <span id="topo"></span>
     <div class="header">
         <div class="logo">
             <img src="./img/luanlogograndenovo.png" alt="">
@@ -76,8 +77,6 @@
     <!--fim Header-->
 
 
-
-
     <!--Inicio princiap-->
     <main class="principal-bg">
         <div class="principal  container">
@@ -85,45 +84,48 @@
             <div class="principal-escrito">
                 <h1 class="titulo-principal fadeInDown" data-anime="200">Aqui É Barba,
                     Cabelo Bigode
-                    E <span>Cervejinha</span>
-                    Gelada.</h1>
+                    E<span>Cervejinha</span>
+                    Gelada.
+                </h1>
                 <p class="fadeInDown" data-anime="300">Quem quer ser bem atendido e voltar para casa
                     mais bonito sabe que a barbearia BarberBar é o
                     melhor lugar!
                 </p>
-
-                <div class="container-agendamento fadeInLeft" data-anime="400">
-                    <form action="">
-
-                        <div class="input-box">
-                            <span>Escolha Data</span>
-                            <input type="date" name="" id="">
-                        </div>
-
-                        <div class="input-box">
-                            <span>Escolha hora</span>
-                            <input type="time" name="" id="">
-                        </div>
-
-                        <div class="input-box">
-                            <button class="btn">Agendar</button>
-                        </div>
-                    </form>
-                </div>
             </div>
 
             <div class="imagem-capa  fadeInRight" data-anime="400">
                 <img src="./img/capa2.png" alt="">
             </div>
-
         </div>
     </main>
-    <!--Fim-principal-->
+      <!--Fim-principal-->
 
+    <!-- Container Agendamento -->
+    <div class="container-agendamento container fadeInLeft" data-anime="400">
+        <form action="">
 
-    <section class="nossos-servicos container " id="servicos">
+            <div class="input-box">
+                <span>Escolha Data</span>
+                <input type="date" name="" id="">
+            </div>
 
-        <h1 class="titulo-servicos fadeInDown" data-anime="600">nossos serviços</h1>
+            <div class="input-box">
+                <span>Escolha hora</span>
+                <input type="time" name="" id="">
+            </div>
+
+            <div class="input-box">
+                <button class="btn">Agendar</button>
+            </div>
+        </form>
+    </div>
+  <!-- fim container agendamento -->
+
+    <section class="nossos-servicos container" id="servicos">
+
+        <div class="titulo-servicos fadeInDown" data-anime="600">
+            <h1>nossos serviços</h1>
+        </div>
 
         <div class="swiper container-slider fadeInUp" data-anime="500">
 
@@ -175,14 +177,16 @@
     </section>
 
 
+    <!--inicio container-produtos-->
     <!-- Modelo que será copiado pelo JS para ser executado-->
     <div class="modelo-produto">
-        <div class="produtos">
+        <div class="produtos  ">
             <div><i class='bx bx-cart-download'></i></div>
             <div class="imagem-produtos"><img src="" alt=""></div>
             <div class="titulo-modelo"></div>
             <div class="descricao-modelo">R$</div>
         </div>
+
 
         <div class="container-cards-produtos">
             <img src="">
@@ -194,10 +198,7 @@
             </div>
         </div>
     </div>
-
     <!-- Fim do Modelo que será copiado pelo Json para ser executado-->
-
-    <!--inicio container-produtos-->
     <section class="produtos-bg" id="produtos">
         <div class="texto-titulo-produtos">
             <h1>nossos produtos</h1>
@@ -207,11 +208,6 @@
         </div>
     </section>
     <!--fim container-produtos-->
-
-
-
-
-
 
     <section class="profissionais-bg" id="profissionais">
         <div class="container-cards container">
@@ -296,26 +292,27 @@
 
     <section class="bar-bg ">
         <div class="container-bar  container">
-
             <div class="conteudo-bar">
                 <h1>CABELO<br>
                     + BARBA<br>
                     = <span>CERVEJA</span>
                 </h1>
-
-                <div class="promocao-bar">
-                    <ul>
-                        <li>Cerveja artesanal</li>
-                        <li>Vinhos</li>
-                        <li>Batidas</li>
-                        <li>Whisky</li>
-                        <li><span>10% de desconto Terça e Quinta</span></li>
-                    </ul>
-                </div>
             </div>
 
-            <div class="imagem-bar">
-                <img src="./img/bar.jpg" alt="">
+            <div class="swiper mySwiper container-carrosel">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide galeria-bar"><img src="./img/1.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/2.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/3.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/4.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/5.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/6.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/7.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/8.jpg" alt=""></div>
+                    <div class="swiper-slide galeria-bar"><img src="./img/9.jpg" alt=""></div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -490,45 +487,23 @@
             <h1>Venha nos <span>visitar</span></h1>
         </div>
         <div class="container-galeria  container">
-            <div class="imagem-galeria  h-2 w-2">
+            <div class="imagem-galeria  w-4 h-1">
                 <img src="./img/galeria1.jpg" alt="">
             </div>
 
-            <div class="imagem-galeria h-1 w-1 ">
+            <div class="imagem-galeria h-2 w-2 ">
                 <img src="./img/galeria2.jpg" alt="">
             </div>
 
-            <div class="imagem-galeria  h-1 w-2">
-                <img src="./img/galeria3.jpg" alt="">
-            </div>
-
+        
             <div class="imagem-galeria h-2 w-2">
-                <img src="./img/galeria4.jpg" alt="">
-            </div>
-
-            <div class="imagem-galeria h-2 w-1">
                 <img src="./img/galeria5.jpg" alt="">
             </div>
 
-            <div class="imagem-galeria h-1 w-2">
-                <img src="./img/galeria6.jpg" alt="">
-            </div>
-
-            <div class="imagem-galeria h-1 w-1">
-                <img src="./img/galeria7.jpg" alt="">
-            </div>
-
-            <div class="imagem-galeria h-1 w-3">
-                <img src="./img/galeria8.jpg" alt="">
-            </div>
-
-            <div class="imagem-galeria">
+         
+            <div class="imagem-galeria  w-4">
                 <img src="./img/galeria9.jpg" alt="">
             </div>
-
-
-
-
         </div>
     </article>
 
@@ -583,18 +558,13 @@
 
     <footer class="footer-bg">
         <div class="footer  container">
-
-            <div class="endereco">
-                <img src="./img/luanlogograndenovo.png" alt="">
-            </div>
-
             <div class="footer-contato">
                 <h3>Contato</h3>
                 <ul>
                     <li><a href="tel:+552199999999">+55 21 9999-9999</a></li>
                     <li><a href="mailto:contato@barberbar.com">contato@Barberbar.com</a></li>
-                    <li>Rua 45 - Duque de Caxias</li>
-                    <li>Rio de Janeiro- RJ</li>
+                    <li><a href="">Rua 45 - Duque de Caxias</a></li>
+                    <li><a href="">Rio de Janeiro- RJ</a></li>
                 </ul>
             </div>
 
@@ -624,11 +594,12 @@
                 </a>
             </div>
         </div>
-        </div>
+
 
     </footer>
 
     <script src="./plugins/simple-anime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="produtosJson.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
